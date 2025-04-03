@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h2>Survey Form</h2>
+    <form>
+        <!-- Short Answer -->
+        <label for="name">Your Name:</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+
+        <!-- Multiple Choice (Radio Buttons) -->
+        <label>How did you hear about us?</label>
+        <br>
+        <input type="radio" id="social_media" name="source" value="social_media">
+        <label for="social_media">Social Media</label>
+        <br>
+        <input type="radio" id="friend" name="source" value="friend">
+        <label for="friend">Friend suggestion</label>
+        <br>
+        <input type="radio" id="advertisement" name="source" value="advertisement">
+        <label for="advertisement">Advertisement</label>
+        <br>
+        <input type="radio" id="college" name="source" value="college">
+        <label for="college">college</label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>What features do you like? (Select all that apply):</label>
+        <br>
+        <input type="checkbox" id="feature1" name="features" value="design">
+        <label for="feature1">Design</label>
+        <br>
+        <input type="checkbox" id="feature2" name="features" value="usability">
+        <label for="feature2">Usability</label>
+        <br>
+        <input type="checkbox" id="feature4" name="features" value="usability">
+        <label for="feature4">websites</label>
+        <br>
+        <input type="checkbox" id="feature3" name="features" value="performance">
+        <label for="feature3">Performance</label>
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="feedback">Your Feedback:</label>
+        <br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Write your feedback here..."></textarea>
+        <br><br>
+
+        <!-- Rating Scale -->
+        <label>Rate your experience (1 to 5):</label>
+        <br>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+        <br><br>
+
+        <!-- Dropdown Menu -->
+        <label for="topic">Select a topic:</label>
+        <br>
+        <select id="topic" name="topic">
+            <option value="website">Website</option>
+            <option value="service">Service</option>
+            <option value="support">Support</option>
+        </select>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
